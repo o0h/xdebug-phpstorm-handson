@@ -1,0 +1,6 @@
+# -----
+# PHP
+# -----
+
+/vendor/
+.phpunit.result.cache

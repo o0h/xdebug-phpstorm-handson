@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  app:
+    volumes:
+      - ..:/app
+    container_name: xdebug_phpstorm_handson
+    build:
+      context: ../
+      dockerfile: .runtime/Dockerfile
+    working_dir: /app
+    environment:
+      PHP_IDE_CONFIG: serverName=xdebug_phpstorm_handson
